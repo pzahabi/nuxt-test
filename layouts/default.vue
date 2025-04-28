@@ -1,6 +1,6 @@
 <template>
     <Header/>
-    <main>
+    <main class="bg-gray-200 min-h-screen">
         <slot/>
     </main>
 </template>

@@ -7,9 +7,10 @@ import {
   faComments,
   faHandshake,
   faBoxesStacked,
+  faChevronLeft
 } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faPhone, faBars, faList, faComments, faHandshake, faBoxesStacked)
+library.add(faPhone, faBars, faList, faComments, faHandshake, faBoxesStacked, faChevronLeft)
 
 export default defineNuxtPlugin((nuxtApp) => {
   nuxtApp.vueApp.component('FontAwesomeIcon', FontAwesomeIcon)

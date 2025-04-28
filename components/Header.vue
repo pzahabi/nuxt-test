@@ -1,6 +1,6 @@
 <template>
-  <header class="w-full py-8 bg-white shadow-lg rounded-b-lg">
-    <div class="container px-8 sm:px-0">
+  <header class="w-full py-8 bg-white shadow-lg rounded-b-lg relative z-10">
+    <div class="container m-auto px-8 sm:px-0">
       <div class="flex items-center justify-between">
         <div></div>
         <!-- Desktop Nav -->
@@ -11,9 +11,9 @@
             <li>
               <NuxtLink
                 to="/products"
-                class="flex items-center gap-1 cursor-pointer transition-colors hover:text-[#EC0D74]"
-                active-class="text-[#EC0D74]"
-                exact-active-class="text-[#EC0D74]"
+                class="flex items-center gap-1 cursor-pointer transition-colors hover:text-primary-pink"
+                active-class="text-primary-pink"
+                exact-active-class="text-primary-pink"
               >
                 <FontAwesomeIcon icon="boxes-stacked" />
                 <span>لیست محصولات</span>
@@ -22,9 +22,9 @@
             <li>
               <NuxtLink
                 to="/consultation"
-                class="flex items-center gap-1 cursor-pointer transition-colors hover:text-[#EC0D74]"
-                active-class="text-[#EC0D74]"
-                exact-active-class="text-[#EC0D74]"
+                class="flex items-center gap-1 cursor-pointer transition-colors hover:text-primary-pink"
+                active-class="text-primary-pink"
+                exact-active-class="text-primary-pink"
               >
                 <FontAwesomeIcon icon="handshake" />
                 <span>دریافت مشاوره</span>
@@ -33,9 +33,9 @@
             <li>
               <NuxtLink
                 to="/faq"
-                class="flex items-center gap-1 cursor-pointer transition-colors hover:text-[#EC0D74]"
-                active-class="text-[#EC0D74]"
-                exact-active-class="text-[#EC0D74]"
+                class="flex items-center gap-1 cursor-pointer transition-colors hover:text-primary-pink"
+                active-class="text-primary-pink"
+                exact-active-class="text-primary-pink"
               >
                 <FontAwesomeIcon icon="comments" />
                 <span>سوالات متداول</span>
@@ -44,9 +44,9 @@
             <li class="relative">
               <NuxtLink
                 to="/contact"
-                class="flex items-center gap-1 cursor-pointer transition-colors hover:text-[#EC0D74]"
-                active-class="text-[#EC0D74]"
-                exact-active-class="text-[#EC0D74]"
+                class="flex items-center gap-1 cursor-pointer transition-colors hover:text-primary-pink"
+                active-class="text-primary-pink"
+                exact-active-class="text-primary-pink"
               >
                 <FontAwesomeIcon icon="phone" />
                 <span>تماس با ما</span>
@@ -57,7 +57,7 @@
         <!-- Call Button -->
         <div class="hidden sm:flex">
           <button
-            class="bg-[#EC0D74] text-white px-5 py-2 rounded-2xl flex items-center gap-2 text-sm font-semibold shadow"
+            class="bg-primary-pink text-white px-5 py-2 rounded-2xl flex items-center gap-2 text-sm font-semibold shadow"
           >
             <FontAwesomeIcon icon="phone" />
             تماس
@@ -66,12 +66,12 @@
         <!-- Mobile Icons -->
         <div class="sm:hidden flex justify-between items-center w-full">
           <button
-            class="w-10 h-10 border border-[#EC0D74] rounded-md flex items-center justify-center text-[#EC0D74]"
+            class="w-10 h-10 border border-primary-pink rounded-md flex items-center justify-center text-primary-pink"
           >
             <FontAwesomeIcon icon="phone" />
           </button>
           <button
-            class="w-10 h-10 border border-[#EC0D74] rounded-md flex items-center justify-center text-[#EC0D74]"
+            class="w-10 h-10 border border-primary-pink rounded-md flex items-center justify-center text-primary-pink"
           >
             <FontAwesomeIcon icon="bars" />
           </button>

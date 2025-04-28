@@ -9,7 +9,11 @@ const config: Config = {
     './app.vue'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'primary-pink': '#E20054',
+      },
+    },
   },
   plugins: [],
 }
