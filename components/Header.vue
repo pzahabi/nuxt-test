@@ -1,6 +1,6 @@
 <template>
   <header class="w-full py-8 bg-white shadow-lg rounded-b-lg relative z-10">
-    <div class="container m-auto px-8 sm:px-0">
+    <div class="container mx-auto px-8 sm:px-0">
       <div class="flex items-center justify-between">
         <div></div>
         <!-- Desktop Nav -->
