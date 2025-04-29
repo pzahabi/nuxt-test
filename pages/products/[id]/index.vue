@@ -1,6 +1,8 @@
 <template>
   <div class="bg-[#EFF3FA] min-h-screen py-8 px-4 sm:px-10">
-    <div class="max-w-4xl mx-auto space-y-6">
+    <div v-if="status === 'pending'"><Spinner/></div>
+    <div v-else-if="error" class="text-gray-900">{{ error }}</div>
+    <div v-else class="max-w-4xl mx-auto space-y-6">
       <div class="bg-white rounded-2xl shadow-md overflow-hidden">
         <div class="p-4 text-right">
           <h1 class="text-md sm:text-lg font-semibold text-[#1B1D29]">

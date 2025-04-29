@@ -20,7 +20,7 @@
             </li>
             <li>
               <NuxtLink
-                to="/consultation"
+                to="/"
                 class="flex items-center gap-1 cursor-pointer transition-colors hover:text-primary-pink"
                 active-class="text-primary-pink"
                 exact-active-class="text-primary-pink"
@@ -31,7 +31,7 @@
             </li>
             <li>
               <NuxtLink
-                to="/faq"
+                to="/"
                 class="flex items-center gap-1 cursor-pointer transition-colors hover:text-primary-pink"
                 active-class="text-primary-pink"
                 exact-active-class="text-primary-pink"
@@ -42,7 +42,7 @@
             </li>
             <li class="relative">
               <NuxtLink
-                to="/contact"
+                to="/"
                 class="flex items-center gap-1 cursor-pointer transition-colors hover:text-primary-pink"
                 active-class="text-primary-pink"
                 exact-active-class="text-primary-pink"
