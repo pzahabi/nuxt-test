@@ -11,7 +11,9 @@
         </div>
 
         <div class="w-full md:w-8/12 lg:w-9/12">
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div v-if="loading"><Spinner/></div>
+          <div v-else-if="error" class="text-gray-900">{{ error }}</div>
+          <div v-else class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             <ProductCard
               v-for="product in products"
               :key="product.id"
@@ -29,6 +31,9 @@ import { ref, watch } from "vue";
 import ProductCard from "~/components/ProductCard.vue";
 import Filters from "~/components/Filters.vue";
 import { type Category, type Product } from "~/constants/types";
+
+const config = useRuntimeConfig();
+const apiUrl = config.public.apiBaseUrl!;
 
 interface FiltersState {
   title: string;
@@ -72,7 +77,7 @@ async function fetchProducts() {
     }
 
     const { data } = await useFetch<Product[]>(
-      `https://fakestoreapi.com/products?${query.toString()}`
+      `${apiUrl}/products?${query.toString()}`
     );
 
     products.value = data.value || [];

@@ -13,12 +13,13 @@
       {{ product.title }}
     </h2>
 
-    <button
+    <NuxtLink
+      :to="`/products/${product.id}`"
       class="flex items-center gap-1 text-primary-pink text-sm font-semibold border-t pt-2 mt-auto w-full justify-center"
     >
       <span>مشاهده جزئیات</span>
       <FontAwesomeIcon icon="chevron-left" />
-    </button>
+    </NuxtLink>
   </div>
 </template>
 
