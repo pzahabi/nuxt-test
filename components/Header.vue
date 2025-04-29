@@ -3,7 +3,6 @@
     <div class="container mx-auto px-8 sm:px-0">
       <div class="flex items-center justify-between">
         <div></div>
-        <!-- Desktop Nav -->
         <nav
           class="hidden sm:flex items-center gap-6 text-sm font-medium text-[#1B1D29]"
         >

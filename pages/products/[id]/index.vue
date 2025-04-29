@@ -11,6 +11,7 @@
           <img
             :src="product?.image"
             :alt="product?.title"
+            loading="lazy"
             class="w-full h-72 object-cover p-4 pt-0"
           />
           <div

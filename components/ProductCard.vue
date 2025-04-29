@@ -5,6 +5,7 @@
     <img
       :src="product.image"
       :alt="product.title"
+      loading="lazy"
       class="w-full h-40 object-cover rounded-lg mb-4"
     />
     <h2
